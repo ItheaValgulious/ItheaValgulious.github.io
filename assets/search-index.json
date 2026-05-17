@@ -9,6 +9,39 @@
     "urlPath": "/posts/_posts/others/hello-world-2025-09-02/"
   },
   {
+    "excerpt": "Topo Homework Week 10 T1 <div class=\"cbox\" 1. (ERH) 判断以下多边形表示的曲面实际上是闭曲面的拓扑分类定理中的哪一个？ (1) ; (2) ; (3) ; (4) . </div <div class='pbox' 我们已经知道公式是 或再除 了.下面用数字代表多边形顶点. (1): 首先有同向边,是不可定…",
+    "path": "_posts/homework/sem2/Topo-Homework---Week-10.md",
+    "tags": [
+      "topo",
+      "math",
+      "math-analysis"
+    ],
+    "title": "Topo Homework - Week 10",
+    "urlPath": "/posts/_posts/homework/sem2/topo-homework-week-10-2026-05-17/"
+  },
+  {
+    "excerpt": "Topo Homework Week 11 T1 <div class=\"cbox\" 1. (ER) 设 为单连通空间, 是 中有相同起点和终点的道路. 证明 . </div <div class='pbox' 为单连通空间,故 , 这一个回路等价类.故 . </div T2 <div class=\"cbox\" 3. (ER) 设 为平凡或离散拓扑空间,…",
+    "path": "_posts/homework/sem2/Topo-Homework---Week-11.md",
+    "tags": [
+      "topo",
+      "homework",
+      "math"
+    ],
+    "title": "Topo Homework - Week 11",
+    "urlPath": "/posts/_posts/homework/sem2/topo-homework-week-11-2026-05-17/"
+  },
+  {
+    "excerpt": "Math Analysis Homework Sem 2 Week 9 T1 <div class=\"cbox\" 2. 求函数 在点 的泰勒展开式. </div <div class='pbox' $ f(x, y) = \\sin(x^2 + y^2) (0, 0) f(x, y) = \\ln(1 + x + y) (0, 0) n f(x, y) = 3…",
+    "path": "_posts/homework/sem2/Math-Analysis-Homework---Sem-2-Week-9.md",
+    "tags": [
+      "math-analysis",
+      "math",
+      "homework"
+    ],
+    "title": "Math Analysis Homework - Sem 2 Week 9",
+    "urlPath": "/posts/_posts/homework/sem2/math-analysis-homework-sem-2-week-9-2026-05-17/"
+  },
+  {
     "excerpt": "Math Analysis Homework Term 2 Week 8 T1 <div class=\"cbox\" 6. 设函数 由方程 所确定. 证明 $ z xy=xz x+yz y z = z(x,y) \\frac{x}{z} = \\varphi\\left(\\frac{y}{z}\\right) \\varphi F(x+y+z, x^2+y^2+z^2…",
     "path": "_posts/homework/sem2/Math-Analysis-Homework---Term-2-Week-8.md",
     "tags": [
