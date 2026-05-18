@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cayley Hamilton</title>
-    <meta name="description" content="Cayley Hamilton 好了大家都知道内容说的是矩阵 特征多项式 有 如果 或者说,如果 满足 的多项式方程的根也属于 ,即我们可以搞特征值那一套. 证明方法会很多. 比如舒尔定理+因式分解,则 ,你可以排列这些因式使得 且 ,于是乘起来显然对任意向量是 . 比如直接考虑广义本征空间 上 是幂零的. 如果任意域 然后大家都知道你不能直接声称 带进去…">
+    <meta name="description" content="Cayley Hamilton 好了大家都知道内容说的是矩阵 特征多项式 有 如果 或者说,如果 满足 的多项式方程的根也属于 ,即我们可以搞特征值那一套. 证明方法会很多. 比如舒尔定理+因式分解,则 ,你可以排列这些因式使得 且 ,于是乘起来显然对任意向量是 . 比如直接考虑广义本征空间 上 是幂零的. 如果任意域 然后大家都知道你不能直接声称 带进去...">
     <link rel="stylesheet" href="/theme/atlas/chrome.light.css">
     <link rel="stylesheet" href="/theme/atlas/prose.light.css">
+    <link rel="stylesheet" href="/assets/protected-content.css">
     <link rel="stylesheet" href="/assets/commutative.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
     
@@ -29,14 +30,14 @@
       </header>
       <main class="page-shell">
         <section class="article-hero">
-          <span class="hero-note">2025-11-24</span>
-          <h1>Cayley Hamilton</h1>
-          <div class="entry-meta article-hero__meta"><span>2025-11-24</span><span>_posts/math</span></div>
-          <div class="tag-row"><a class="tag-chip" href="/tags/linear-algebra/">linear-algebra</a><a class="tag-chip" href="/tags/math/">math</a><a class="tag-chip" href="/tags/whims/">whims</a></div>
-        </section>
-        <section class="article-layout">
-          <article class="article-panel">
-            <div class="prose"><h1 id="cayley-hamilton">Cayley Hamilton</h1>
+    <span class="hero-note">2025-11-24</span>
+    <h1>Cayley Hamilton</h1>
+    <div class="entry-meta article-hero__meta"><span>2025-11-24</span><span>_posts/math</span></div>
+    <div class="tag-row"><a class="tag-chip" href="/tags/linear-algebra/">linear-algebra</a><a class="tag-chip" href="/tags/math/">math</a><a class="tag-chip" href="/tags/whims/">whims</a></div>
+  </section>
+            <section class="article-layout">
+              <article class="article-panel">
+                <div class="prose"><h1 id="cayley-hamilton">Cayley Hamilton</h1>
 <p>好了大家都知道内容说的是矩阵<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>特征多项式<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><mi>λ</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="normal">∣</mi><mi>λ</mi><mi>I</mi><mo>−</mo><mi>A</mi><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">p(\lambda)=\vert \lambda I-A\vert</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">λ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal">λ</span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord">∣</span></span></span></span>有<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p(A)=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">p</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></p>
 <h2 id="如果frc">如果<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>R</mi><mo separator="true">,</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">F=R,C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span></span></span></span></h2>
 <p>或者说,如果<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span></span></span></span>满足<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span></span></span></span>的多项式方程的根也属于<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span></span></span></span>,即我们可以搞特征值那一套.</p>
@@ -136,16 +137,16 @@ g(x)=\det f(x)=\det (x_iI-A) \det Q(x)
 <p>这是两个标量多项式相乘,而第一个根据Cayley-Hamilton在带入<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>后值为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>,所以<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g(A)=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>.</p>
 <p>一个核心点就在于,我们往矩阵多项式里带入矩阵的话是很小心的(比如<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo><mo mathvariant="normal">≠</mo><mo stretchy="false">(</mo><mi>B</mi><mi>I</mi><mo>−</mo><mi>A</mi><mo stretchy="false">)</mo><mi>Q</mi><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(B)\ne (BI-A)Q(B)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.1389em;">F</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel"><span class="mrel"><span class="mord vbox"><span class="thinbox"><span class="rlap"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="inner"><span class="mord"><span class="mrel"></span></span></span><span class="fix"></span></span></span></span></span><span class="mspace nobreak"></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mord mathnormal">Q</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span><span class="mclose">)</span></span></span></span>,因为因式分解的时候利用了<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">xI</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.0785em;">I</span></span></span></span>和<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>的交换律,而替换成任意矩阵就没有这个性质),但是取行列式转化成标量多项式后就没问题了.</p>
 </div></div>
-            <div class="pager-row">
-              <a href="/posts/_posts/homework/sem1/math-analysis-homework-week-9-2025-11-23/"><span>Older</span><strong>Math Analysis Homework - Week 9</strong></a>
-              <a href="/posts/_posts/homework/sem1/math-analysis-homework-week-10-2025-11-24/"><span>Newer</span><strong>Math Analysis Homework - Week 10</strong></a>
-            </div>
-          </article>
-          <aside class="side-panel">
-            <h3>On This Page</h3>
-            <ul><li><a href="#cayley-hamilton">Cayley Hamilton</a></li><li><a href="#如果frc">如果F=R,C</a></li><li><a href="#如果任意域">如果任意域</a></li><li><a href="#另一个证法">另一个证法</a></li><li><a href="#重要推论">重要推论</a></li></ul>
-          </aside>
-        </section>
+                <div class="pager-row">
+    <a href="/posts/_posts/homework/sem1/math-analysis-homework-week-9-2025-11-23/"><span>Older</span><strong>Math Analysis Homework - Week 9</strong></a>
+    <a href="/posts/_posts/homework/sem1/math-analysis-homework-week-10-2025-11-24/"><span>Newer</span><strong>Math Analysis Homework - Week 10</strong></a>
+  </div>
+              </article>
+              <aside class="side-panel">
+                <h3>On This Page</h3>
+                <ul><li><a href="#cayley-hamilton">Cayley Hamilton</a></li><li><a href="#如果frc">如果F=R,C</a></li><li><a href="#如果任意域">如果任意域</a></li><li><a href="#另一个证法">另一个证法</a></li><li><a href="#重要推论">重要推论</a></li></ul>
+              </aside>
+            </section>
       </main>
       <footer class="site-footer">
         <div class="site-footer__identity">
@@ -154,6 +155,6 @@ g(x)=\det f(x)=\det (x_iI-A) \det Q(x)
         </div>
       </footer>
     </div>
-    
+    <script src="/assets/protected-content.js"></script>
   </body>
 </html>
