@@ -31,6 +31,17 @@
     "urlPath": "/posts/_posts/homework/sem2/topo-homework-week-11-2026-05-17/"
   },
   {
+    "excerpt": "Math Analysis Homework Sem 2 Week 9 T1 <div class=\"cbox\" 2. 求函数 在点 的泰勒展开式. </div <div class='pbox' $ f(x, y) = \\sin(x^2 + y^2) (0, 0) f(x, y) = \\ln(1 + x + y) (0, 0) n f(x, y) = 3...",
+    "path": "_posts/homework/sem2/Math-Analysis-Homework---Sem-2-Week-9.md",
+    "tags": [
+      "math-analysis",
+      "math",
+      "homework"
+    ],
+    "title": "Math Analysis Homework - Sem 2 Week 9",
+    "urlPath": "/posts/_posts/homework/sem2/math-analysis-homework-sem-2-week-9-2026-05-17/"
+  },
+  {
     "excerpt": "Math Analysis Homework Term 2 Week 8 T1 <div class=\"cbox\" 6. 设函数 由方程 所确定. 证明 $ z xy=xz x+yz y z = z(x,y) \\frac{x}{z} = \\varphi\\left(\\frac{y}{z}\\right) \\varphi F(x+y+z, x^2+y^2+z^2...",
     "path": "_posts/homework/sem2/Math-Analysis-Homework---Term-2-Week-8.md",
     "tags": [
