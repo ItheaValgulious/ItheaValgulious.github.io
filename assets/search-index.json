@@ -19,6 +19,17 @@
     "urlPath": "/posts/math/physics-note-1-2026-05-21/"
   },
   {
+    "excerpt": "Math Analysis Homework Sem 2 Week 10 Class 1 T1 <div class=\"cbox\" 15. (1) 求表面积固定而体积最大的长方体; (2) 求体积固定而表面积最小的长方体. </div <div class=\"pbox\" (1): 设边长分别为 ,即求: $ F(a,b,c,\\lambda)=abc \\la...",
+    "path": "homework/sem2/Math-Analysis-Homework---Sem-2-Week-10.md",
+    "tags": [
+      "homework",
+      "math",
+      "math-analysis"
+    ],
+    "title": "Math Analysis Homework - Sem 2 Week 10",
+    "urlPath": "/posts/homework/sem2/math-analysis-homework-sem-2-week-10-2026-05-18/"
+  },
+  {
     "excerpt": "Topo Homework Week 10 T1 <div class=\"cbox\" 1. (ERH) 判断以下多边形表示的曲面实际上是闭曲面的拓扑分类定理中的哪一个？ (1) ; (2) ; (3) ; (4) . </div <div class='pbox' 我们已经知道公式是 或再除 了.下面用数字代表多边形顶点. (1): 首先有同向边,是不可定...",
     "path": "homework/sem2/Topo-Homework---Week-10.md",
     "tags": [
