@@ -9,6 +9,17 @@
     "urlPath": "/posts/others/hello-world-2025-09-02/"
   },
   {
+    "excerpt": "Topo Homework Week 12 T1 <div class=\"cbox\" 2. (E) 设 是一个拓扑空间, 是一个离散拓扑空间, . 证明 是一个覆盖映射. </div <div class=\"pbox\" $ f: \\mathbb{R}^2 \\to S^1 \\times \\mathbb{R}, (x,y) \\mapsto (e^{2\\pi i...",
+    "path": "homework/sem2/Topo-Homework---Week-12.md",
+    "tags": [
+      "math",
+      "homework",
+      "topo"
+    ],
+    "title": "Topo Homework - Week 12",
+    "urlPath": "/posts/homework/sem2/topo-homework-week-12-2026-05-25/"
+  },
+  {
     "excerpt": "Physics Note 1 自己先读他一遍 力学 坐标系转化 例: 球坐标系 科里奥利力 [think] 这里的关键是,其实向量并不擅长表达旋转,所以表达出旋转坐标系下的某位置在真实系下的表达然后再求两次导是很麻烦的.但 一个量在旋转系和静止系下分别的导数的关系是简单的(指的是,同一个向量,选定旋转的基向量与固定的基向量的两种表示后得到的坐标求导的关系)...",
     "path": "math/physics-basic-force.md",
     "tags": [
@@ -30,17 +41,6 @@
     "urlPath": "/posts/homework/sem2/math-analysis-homework-sem-2-week-10-2026-05-18/"
   },
   {
-    "excerpt": "Topo Homework Week 10 T1 <div class=\"cbox\" 1. (ERH) 判断以下多边形表示的曲面实际上是闭曲面的拓扑分类定理中的哪一个？ (1) ; (2) ; (3) ; (4) . </div <div class='pbox' 我们已经知道公式是 或再除 了.下面用数字代表多边形顶点. (1): 首先有同向边,是不可定...",
-    "path": "homework/sem2/Topo-Homework---Week-10.md",
-    "tags": [
-      "topo",
-      "math",
-      "math-analysis"
-    ],
-    "title": "Topo Homework - Week 10",
-    "urlPath": "/posts/homework/sem2/topo-homework-week-10-2026-05-17/"
-  },
-  {
     "excerpt": "Topo Homework Week 11 T1 <div class=\"cbox\" 1. (ER) 设 为单连通空间, 是 中有相同起点和终点的道路. 证明 . </div <div class='pbox' 为单连通空间,故 , 这一个回路等价类.故 . </div T2 <div class=\"cbox\" 3. (ER) 设 为平凡或离散拓扑空间,...",
     "path": "homework/sem2/Topo-Homework---Week-11.md",
     "tags": [
@@ -50,6 +50,17 @@
     ],
     "title": "Topo Homework - Week 11",
     "urlPath": "/posts/homework/sem2/topo-homework-week-11-2026-05-17/"
+  },
+  {
+    "excerpt": "Topo Homework Week 10 T1 <div class=\"cbox\" 1. (ERH) 判断以下多边形表示的曲面实际上是闭曲面的拓扑分类定理中的哪一个？ (1) ; (2) ; (3) ; (4) . </div <div class='pbox' 我们已经知道公式是 或再除 了.下面用数字代表多边形顶点. (1): 首先有同向边,是不可定...",
+    "path": "homework/sem2/Topo-Homework---Week-10.md",
+    "tags": [
+      "topo",
+      "math",
+      "homework"
+    ],
+    "title": "Topo Homework - Week 10",
+    "urlPath": "/posts/homework/sem2/topo-homework-week-10-2026-05-17/"
   },
   {
     "excerpt": "Math Analysis Homework Sem 2 Week 9 T1 <div class=\"cbox\" 2. 求函数 在点 的泰勒展开式. </div <div class='pbox' $ f(x, y) = \\sin(x^2 + y^2) (0, 0) f(x, y) = \\ln(1 + x + y) (0, 0) n f(x, y) = 3...",
