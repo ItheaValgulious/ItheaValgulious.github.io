@@ -1,0 +1,112 @@
+.entry-protected-note {
+  color: var(--muted, #52606d);
+  font-style: italic;
+}
+
+.tag-row--suppressed {
+  display: none;
+}
+
+.protected-gate {
+  display: grid;
+  gap: 24px;
+}
+
+.protected-gate__card {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border: 1px dashed color-mix(in srgb, var(--stroke, #1f2937) 28%, transparent);
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--paper, rgba(255, 251, 245, 0.94)) 92%, white 8%);
+  box-shadow: var(--shadow, 0 20px 50px rgba(15, 23, 42, 0.12));
+}
+
+.protected-gate__eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  color: var(--accent, #c2410c);
+}
+
+.protected-gate__card h2,
+.protected-gate__copy,
+.protected-gate__status {
+  margin: 0;
+}
+
+.protected-gate__copy {
+  color: var(--muted, #52606d);
+  line-height: 1.7;
+}
+
+.protected-gate__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: end;
+}
+
+.protected-gate__field {
+  display: grid;
+  gap: 8px;
+  flex: 1 1 280px;
+}
+
+.protected-gate__field span {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.protected-gate__field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--stroke, #1f2937) 24%, transparent);
+  background: color-mix(in srgb, var(--paper, #fff) 86%, white 14%);
+  color: inherit;
+  font: inherit;
+}
+
+.protected-gate__form button {
+  min-height: 48px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--accent, #c2410c);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.protected-gate__form button[disabled] {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.protected-gate__status {
+  min-height: 1.4em;
+  color: var(--muted, #52606d);
+}
+
+.protected-gate__status[data-tone="error"] {
+  color: #b91c1c;
+}
+
+.protected-gate[data-state="unlocked"] .protected-gate__card {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .protected-gate__card {
+    padding: 22px;
+  }
+
+  .protected-gate__form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
